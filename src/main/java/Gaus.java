@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Gaus {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int size = scanner.nextInt();
@@ -12,7 +12,6 @@ public class Main {
         }
         System.out.println((int) gauss(matrix, size));
     }
-
     public static double gauss(double[][] matrix, int size) {
         if (matrix.length == 1) {
             return matrix[0][0];
@@ -53,7 +52,7 @@ public class Main {
     }
 
     //This method converts the matrix to its upper triangle equivalent.
-    private static double[][] makeUpperTriangle(double[][] matrix, int length) {
+    private static void makeUpperTriangle(double[][] matrix, int length) {
         for (int row = 1; row < length; row++) {
             if (matrix[row][0] != 0) {
                 double n = matrix[row][0] / matrix[0][0];
@@ -62,7 +61,6 @@ public class Main {
                 }
             }
         }
-        return matrix;
     }
 }
 
