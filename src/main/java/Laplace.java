@@ -1,21 +1,7 @@
-import java.util.Scanner;
 public class Laplace {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int size = scanner.nextInt();
-        double[][] matrix = new double[size][size];
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
-                matrix[i][j] = scanner.nextDouble();
-            }
-        }
-        double result = laplace(matrix, matrix.length);
-        System.out.println(result);
-    }
-
     //This method eliminates the row and column that is given in the method signature in order to make a sub matrix for
     //calculating the determinant.
-    public static double[][] subMatrix(double[][] matrix, int size, int row, int col) {
+    private static double[][] subMatrix(double[][] matrix, int size, int row, int col) {
         double[][] sub = new double[size - 1][size - 1];
         int r = 0, c = 0;
         for (int i = 0; i < size; i++) {
