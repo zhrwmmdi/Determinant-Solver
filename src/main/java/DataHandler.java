@@ -18,9 +18,16 @@ public class DataHandler {
     }
 
     public double[][] produceMatrix(){
-        double[][] matrix = new double[(int) Math.sqrt(counter)][(int) Math.sqrt(counter)];
-        readAndStoreNumbers(matrix);
-        return matrix;
+        int size = (int)Math.sqrt(counter);
+        if (counter%size != 0){
+            System.err.println("Unidentified");
+            System.exit(0);
+            return null;
+        }else {
+            double[][] matrix = new double[size][size];
+            readAndStoreNumbers(matrix);
+            return matrix;
+        }
     }
     private void readAndStoreNumbers(double[][] matrix)   {
 

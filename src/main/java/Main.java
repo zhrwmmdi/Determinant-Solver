@@ -7,6 +7,6 @@ public class Main {
 
         double determinant = Gauss.gauss(matrix, matrix.length);
         System.out.println(determinant);
-        
+
     }
 }
