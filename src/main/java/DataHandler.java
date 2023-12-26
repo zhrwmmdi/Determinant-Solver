@@ -20,7 +20,7 @@ public class DataHandler {
     public double[][] produceMatrix(){
         int size = (int)Math.sqrt(counter);
         if (counter%size != 0){
-            System.err.println("Unidentified");
+            System.err.println("Undefined");
             System.exit(0);
             return null;
         }else {
@@ -46,7 +46,7 @@ public class DataHandler {
     public void printMatrix(double[][] matrix){
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix.length; j++) {
-                System.out.print(matrix[i][j]+" ");
+                System.out.print(matrix[i][j]+"  ");
             }
             System.out.println();
         }
