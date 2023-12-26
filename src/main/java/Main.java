@@ -5,7 +5,7 @@ public class Main {
         DataHandler input = new DataHandler("matrix.txt");
         double[][] matrix = input.produceMatrix();
 
-        double determinant = Gauss.gauss(matrix, matrix.length);
+        double determinant = Rezaee.omidRezaei(matrix);
         System.out.println(determinant);
 
     }
