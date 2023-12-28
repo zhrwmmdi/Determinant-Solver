@@ -1,3 +1,5 @@
+package procedure;
+
 public class Rezaee {
     public static double omidRezaei(double[][] matrix) {
         if (matrix.length == 1) return matrix[0][0];
@@ -10,7 +12,6 @@ public class Rezaee {
 
         double[][] subMatrix00 = subMatrix(matrix, matrix.length, 0, 0);
         double insideDet = calculateDetSubMatrix(subMatrix00, subMatrix00.length - 1, subMatrix00.length - 1);
-
         if (insideDet == 0) {
             return 1;
         }

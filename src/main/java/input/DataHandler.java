@@ -1,3 +1,5 @@
+package input;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -40,7 +42,7 @@ public class DataHandler {
                 }
             }
         }catch (Exception ex){
-            System.out.println("SOMETHING WENT WRONG IN DataHandler.readAndStoreNumbers() method.\n"+ex.getMessage());
+            System.out.println("SOMETHING WENT WRONG IN input.DataHandler.readAndStoreNumbers() method.\n"+ex.getMessage());
         }
     }
     public void printMatrix(double[][] matrix){

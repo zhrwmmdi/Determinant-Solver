@@ -1,3 +1,5 @@
+package procedure;
+
 public class Gauss {
     public static double gauss(double[][] matrix, int size) {
         if (matrix.length == 1) {

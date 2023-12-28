@@ -1,3 +1,5 @@
+package procedure;
+
 public class Laplace {
     //This method eliminates the row and column that is given in the method signature in order to make a sub matrix for
     //calculating the determinant.

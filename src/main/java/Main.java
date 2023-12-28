@@ -1,3 +1,5 @@
+import input.DataHandler;
+import procedure.Rezaee;
 import java.io.FileNotFoundException;
 
 public class Main {
@@ -6,8 +8,8 @@ public class Main {
         double[][] matrix = input.produceMatrix();
 
         double determinant = Rezaee.omidRezaei(matrix);
-//        double determinant = Gauss.gauss(matrix, matrix.length);
-//        double determinant = Laplace.laplace(matrix, matrix.length);
+//        double determinant = procedure.Gauss.gauss(matrix, matrix.length);
+//        double determinant = procedure.Laplace.laplace(matrix, matrix.length);
 
         System.out.println("Det = "+determinant);
     }
