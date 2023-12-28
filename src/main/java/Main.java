@@ -7,7 +7,7 @@ public class Main {
         DataHandler input = new DataHandler("C:\\Users\\Hp\\Desktop\\test case project 3  DS\\0.txt");
         double[][] matrix = input.produceMatrix();
 
-        double determinant = Rezaee.omidRezaei(matrix);
+        double determinant = Rezaee.omidRezaee(matrix);
 //        double determinant = procedure.Gauss.gauss(matrix, matrix.length);
 //        double determinant = procedure.Laplace.laplace(matrix, matrix.length);
 

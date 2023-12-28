@@ -1,8 +1,6 @@
 package procedure;
 
 public class Laplace {
-    //This method eliminates the row and column that is given in the method signature in order to make a sub matrix for
-    //calculating the determinant.
     private static double[][] subMatrix(double[][] matrix, int size, int row, int col) {
         double[][] sub = new double[size - 1][size - 1];
         int r = 0, c = 0;
