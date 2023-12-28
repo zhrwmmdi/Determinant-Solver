@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        DataHandler input = new DataHandler("C:\\Users\\Hp\\Desktop\\test case project 3  DS\\0.txt");
+        DataHandler input = new DataHandler("matrix.txt");
         double[][] matrix = input.produceMatrix();
 
         double determinant = Rezaee.omidRezaee(matrix);
