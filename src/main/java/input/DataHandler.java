@@ -13,10 +13,17 @@ public class DataHandler {
     public DataHandler(String filePath) throws FileNotFoundException {
         numbersFile = new File(filePath);
         reader = new Scanner(numbersFile);
+        try{
+
             while (reader.hasNext()){
                 counter++;
-                reader.nextInt();
+                reader.nextFloat();
             }
+        }catch (Exception e){
+            System.out.println(5);
+            e.printStackTrace();
+        }
+
     }
 
     public double[][] produceMatrix(){
@@ -37,7 +44,7 @@ public class DataHandler {
             for (int i = 0; i < matrix.length; i++) {
                 for (int j = 0; j < matrix.length; j++) {
                     if (reader.hasNext()){
-                        matrix[i][j] = reader.nextInt();
+                        matrix[i][j] = reader.nextFloat();
                     }
                 }
             }
